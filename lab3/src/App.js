@@ -8,6 +8,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import Search from "./components/Search";
+
 //import array of "items" contained in data/data.js
 import { items } from "./data/data";
 
@@ -15,6 +17,7 @@ function App() {
   return (
     <Container>
       <Row>
+      
         <Col>
         <h2>Who are we... </h2>
         <CafeInfo/>
@@ -32,7 +35,8 @@ function App() {
           {" "}
           <div>
             <h2>Explore menu</h2>
-            <DisplayFoodItems foodList={items} />
+            <Search details={items}/>
+            {/* <DisplayFoodItems foodList={items} /> */}
           </div>
         </Col>
       </Row>

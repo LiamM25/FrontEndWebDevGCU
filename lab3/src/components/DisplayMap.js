@@ -1,7 +1,8 @@
 import React from "react";
+import Map from "./map"
 
 function DisplayMap() {
-  return <p>Map goes here</p>;
+  <Map/>
 };
 
 export default DisplayMap;

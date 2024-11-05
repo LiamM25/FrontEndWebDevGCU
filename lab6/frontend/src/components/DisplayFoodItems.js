@@ -1,8 +1,7 @@
 import React from 'react';
-import Item from "./item";
-import {items} from'../data/Data';
+import Item from "./Item";
 
-const DisplayFoodItems = () => {
+const DisplayFoodItems = ({items}) => {
    return (
        <ul>
            {items.map((food) => {
